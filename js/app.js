@@ -4,14 +4,14 @@ var url = host + 'wp-admin/admin-ajax.php';
 (function () {
 
   var app = angular.module("app", []);
-  app.factory("SampleInterceptor", ['$q', '$rootScope', SampleInterceptor]);
-  app.controller("WizardController", ['$q', '$http', '$scope', '$rootScope', wizardController]);
-  app.filter('getElementById', getElementByIdFilter);
-  app.directive("loader", ['$rootScope', modalLoader]);
-  app.directive("erro", ['$rootScope', modalErro]);
-  app.directive("msgsucesso", ['$rootScope', msgSucesso]);
-  app.directive("msgerro", ['$rootScope', msgErro]);
-  app.config(AppConfig);
+  // app.factory("SampleInterceptor", ['$q', '$rootScope', SampleInterceptor]);
+  // app.controller("WizardController", ['$q', '$http', '$scope', '$rootScope', wizardController]);
+  // app.filter('getElementById', getElementByIdFilter);
+  // app.directive("loader", ['$rootScope', modalLoader]);
+  // app.directive("erro", ['$rootScope', modalErro]);
+  // app.directive("msgsucesso", ['$rootScope', msgSucesso]);
+  // app.directive("msgerro", ['$rootScope', msgErro]);
+  // app.config(AppConfig);
 
   function getElementByIdFilter() {
     return function (obj, item) {

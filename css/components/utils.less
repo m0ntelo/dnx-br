@@ -2,12 +2,40 @@
 
 @import url("../mixins/functions.less");
 
-.invalid-feedback {
-  font-family: @font-family;
-  font-size: 12px;
-  position: relative;
-  top: 60px;
-  color: @red-light;
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.line {
+  width: 76px;
+  height: 4px;
+  background-color: @green;
+  margin: 35px auto;
+  border-radius: 5px;
+}
+
+.center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  align-content: left;
+  justify-content: left;
+}
+
+.right {
+  display: flex;
+  align-content: right;
+  justify-content: right;
+}
+
+.contrast {
+  display: inline-block;
+  color: @green;
 }
 
 // customize AngularJS
@@ -25,18 +53,18 @@
 
 .msg-sucesss {
   text-align: center;
-  font-family: @font-family;
+  font-family: @font-dosis;
   font-size: 16px;
-  border: 1px solid @green-light;
+  border: 1px solid green;
   padding: 10px 20px;
-  color: @green-light;
+  color: red;
 }
 
 .msg-erro {
   text-align: center;
-  font-family: @font-family;
+  font-family: @font-dosis;
   font-size: 16px;
-  border: 1px solid @red-light;
+  border: 1px solid red;
   padding: 10px 20px;
-  color: @red-light;
+  color: red;
 }
