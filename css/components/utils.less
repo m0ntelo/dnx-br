@@ -1,0 +1,42 @@
+// compress: true
+
+@import url("../mixins/functions.less");
+
+.invalid-feedback {
+  font-family: @font-family;
+  font-size: 12px;
+  position: relative;
+  top: 60px;
+  color: @red-light;
+}
+
+// customize AngularJS
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+// Mensagem e-mail
+
+.msg-sucesss {
+  text-align: center;
+  font-family: @font-family;
+  font-size: 16px;
+  border: 1px solid @green-light;
+  padding: 10px 20px;
+  color: @green-light;
+}
+
+.msg-erro {
+  text-align: center;
+  font-family: @font-family;
+  font-size: 16px;
+  border: 1px solid @red-light;
+  padding: 10px 20px;
+  color: @red-light;
+}

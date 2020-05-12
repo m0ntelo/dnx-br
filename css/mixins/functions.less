@@ -1,0 +1,181 @@
+// compress: true
+
+@import url("variables.less");
+@import url("key-frames.less");
+
+// 
+// Functions
+// 
+
+
+//
+// Scale
+//
+
+.origin(@var) {
+  transform-origin: @var;
+  -webkit-transform-origin: @var;
+}
+
+//
+// Scale
+//
+
+.scale(@var) {
+  -webkit-transform: scale(@var);
+  -moz-transform: scale(@var);
+  -o-transform: scale(@var);
+}
+
+
+//
+// Rotate
+//
+
+.rotateY(@var) {
+  -webkit-transform: rotateY(@var);
+  -moz-transform: rotateY(@var);
+  -o-transform: rotateY(@var);
+}
+
+//
+// Backface
+//
+
+.backface(@var) {
+  -moz-backface-visibility: @var;
+  -webkit-backface-visibility: @var;
+  -o-backface-visibility: @var;
+  backface-visibility: @var;
+}
+
+//
+// Pespective
+//
+
+.perspective(@var) {
+  -webkit-perspective: @var;
+  -moz-perspective: @var;
+  perspective: @var;
+}
+
+//
+// Transforme style
+//
+
+.transformer-style(@var) {
+  -webkit-transform-style: @var;
+  -moz-transform-style: @var;
+  -o-transform-style: @var;
+  transform-style: @var;
+}
+
+//
+// Reseta aparencia do componente
+//
+
+.aparencia(@var: none) {
+  appearance: @var;
+  -webkit-appearance: @var;
+  -moz-appearance: @var;
+  -o-appearance: @var;
+}
+
+//
+// Transparência
+//
+
+.transparencia(@var) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@var)";
+  filter: alpha(opacity= @var);
+  -moz-opacity: @var;
+  -khtml-opacity: @var;
+  opacity: @var;
+}
+
+//
+// Background-size
+//
+
+.background-size(@var) {
+  background-size: @var;
+  -webkit-background-size: @var;
+  -moz-background-size: @var;
+  -ms-background-size: @var;
+  -o-background-size: @var;
+}
+
+//
+// Box Shadow
+//
+
+.box-shadow-config(@var) {
+  -webkit-box-shadow: @var;
+  -moz-box-shadow: @var;
+  -ms-box-shadow: @var;
+  -o-box-shadow: @var;
+  box-shadow: @var;
+}
+
+//
+// Box Shadow
+//
+
+.box-shadow() {
+  -webkit-box-shadow: 0px 1px 3px #b1b6c1;
+  -moz-box-shadow: 0px 1px 3px #b1b6c1;
+  -ms-box-shadow: 0px 1px 3px #b1b6c1;
+  -o-box-shadow: 0px 1px 3px #b1b6c1;
+  box-shadow: 0px 1px 3px #b1b6c1;
+}
+
+//
+// Box Shadow : Hover
+//
+
+.box-shadow-hover() {
+  -webkit-box-shadow: 0px 1px 15px #b1b6c1;
+  -moz-box-shadow: 0px 1px 15px #b1b6c1;
+  -ms-box-shadow: 0px 1px 15px #b1b6c1;
+  -o-box-shadow: 0px 1px 15px #b1b6c1;
+  box-shadow: 0px 1px 15px #b1b6c1;
+}
+
+//
+// Transição
+//
+
+.transition(@args: all 0.5s) {
+  -webkit-transition: @args;
+  -moz-transition: @args;
+  -ms-transition: @args;
+  -o-transition: @args;
+  transition: @args;
+}
+
+//
+// Cor Placeholder
+//
+
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+    // Chrome/Opera/Safari
+    color: @color;
+  }
+  &::-moz-placeholder {
+    // Firefox 19+
+    color: @color;
+  }
+  &:-ms-input-placeholder {
+    // IE 10+
+    color: @color;
+  }
+  &:-moz-placeholder {
+    // Firefox 18-
+    color: @color;
+  }
+}
+
+
+
+

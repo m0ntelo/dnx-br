@@ -1,0 +1,51 @@
+/*
+Theme Name: DNX BR
+Theme URI: 
+Description: 
+Author: Vibe Tecnologia
+Author URI: http://vibetecnologia.com
+Version: 1.0
+*/
+
+/* 
+ * Fonts (Google fonts) 
+ */
+
+@import url("css/mixins/font-import.css");
+
+/*
+ * Grid Bootstrap (v3.3.7) 
+ * Font Awesome (v5.12.1)  
+ * Normalize (v8.0.1)
+ */
+
+@import url("css/lib/bootstrap.min.css");
+@import url("css/lib/unslider.css");
+@import url("css/lib/normalize.min.css");
+@import url("css/lib/fontawesome.all.min.css");
+@import url("css/lib/fontawesome.solid.min.css");
+@import url("css/lib/fontawesome.brands.min.css");
+
+/*
+ * Components
+ */
+
+@import url("css/components/menu.css");
+@import url("css/components/spinner.css");
+@import url("css/components/buttons.css");
+@import url("css/components/utils.css");
+@import url("css/components/footer.css");
+
+/*
+ * Base
+ */
+
+@import url("css/base/home.css");
+@import url("css/base/page.css");
+@import url("css/base/sigle.css");
+
+/*
+ * Responsivo
+ */
+
+@import url("css/responsivo/media-queries.css");

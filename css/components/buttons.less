@@ -1,0 +1,32 @@
+// compress: true
+
+@import url("../mixins/functions.less");
+
+//
+// Buttons
+//
+
+.btn-dnx-primary {
+  .btn-dnx-primary();
+}
+
+.btn-dnx-primary() {
+  width: auto;
+  font-family: @font-family;
+  font-size: 24px;
+  background-color: @blue-light;
+  color: @white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  &:hover,
+  &:focus,
+  &:active,
+  &:link {
+    text-decoration: none;
+    background-color: @blue-light;
+    color: @white;
+  }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title><?php bloginfo( 'name' ); ?><?php wp_title(" - ");?></title>
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?<?php echo time(); ?>" />
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+  <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/banpara-ico.ico" />
+  <?php wp_enqueue_script("jquery"); ?>
+  <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
+</head>
+<body ng-app="app">
+<section class="menu">
+</section>
+<!-- end menu -->
+
