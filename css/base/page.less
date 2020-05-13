@@ -3,5 +3,275 @@
 @import url("../mixins/functions.less");
 
 //
-// Page  
+// Page
 //
+
+.contact {
+  height: 100vh;
+  padding: 75px 0 75px 0;
+  .contact-title {
+    font-family: @font-dosis;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+  }
+  .contact-description {
+    font-family: @font-dosis;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 32px;
+    color: black;
+  }
+  .line {
+    width: 50px;
+    margin: 35px 0;
+  }
+  .btn-dnx-secondary {
+    font-size: 32px;
+    margin-top: 65px;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    input {
+      width: 100%;
+      margin-bottom: 35px;
+      padding: 25px 20px;
+      border: 1px solid @green;
+      border-radius: 50px;
+      font-family: @font-dosis;
+      font-weight: 500;
+      font-size: 18px;
+      color: @black;
+      .placeholder(@gray-20);
+    }
+    textarea {
+      width: 100%;
+      padding: 30px 20px;
+      border: 1px solid @green;
+      border-radius: 30px;
+      font-family: @font-dosis;
+      font-weight: 500;
+      font-size: 18px;
+      color: @black;
+      resize: none;
+      .placeholder(@gray-20);
+    }
+  }
+}
+
+//
+// Post
+//
+
+.post-banner {
+  background-image: url(../../img/meeting.jpg);
+  background-position: center;
+  background-size: cover;
+  .post-banner-title {
+    display: inline-block;
+    background-color: @white;
+    font-family: @font-dosis;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    position: relative;
+    left: 50%;
+    margin: 120px 0 120px 0;
+    padding: 5px 20px 5px 20px;
+    margin-left: -240px;
+  }
+  .post-banner-description {
+    margin: 0 0 150px 0;
+    padding: 20px 0 20px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: @font-dosis;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+  }
+}
+
+.post-content {
+  position: relative;
+  padding: 65px 0 65px 0;
+  .post-content-title {
+    display: flex;
+    align-items: center;
+    margin: 0 0 35px 0;
+    font-family: @font-dosis;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    color: @gray-20;
+    line-height: 50px;
+  }
+  .post-content-description {
+    margin: 0 0 35px 0;
+    font-family: @font-dosis;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 32px;
+    color: @gray-20;
+    line-height: 30px;
+  }
+  .post-content-card {
+    max-width: 518px;
+    margin: 50px 0 0 0;
+    background-color: @orange;
+    .box-shadow-config(11px 11px 0px 0px rgba(219,186,59,1));
+    padding: 20px 30px;
+    float: right;
+    .post-content-card-title {
+      display: flex;
+      align-items: center;
+      margin: 0 0 35px 0;
+      font-family: @font-dosis;
+      font-size: 40px;
+      font-weight: 500;
+      text-align: left;
+      color: @gray-20;
+      line-height: 50px;
+    }
+    .post-content-card-description {
+      font-family: @font-dosis;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: left;
+      line-height: 32px;
+      color: @gray-20;
+      line-height: 30px;
+    }
+  }
+  .float-background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.stages {
+  padding: 65px 0 65px 0;
+  background-color: @gray-30;
+  .stages-title {
+    position: relative;
+    margin: 0 0 5px 0;
+    font-family: @font-dosis;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: @gray-20;
+    line-height: 50px;
+  }
+  .stages-box {
+    position: relative;
+    width: 610px;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 0 45px 0 45px;
+    border-left: 1.1px solid @green;
+    bottom: -45px;
+    z-index: @z-index-1;
+    .stage-description {
+      font-family: @font-dosis;
+      font-size: 22px;
+      font-weight: 500;
+      text-align: left;
+      line-height: 32px;
+      color: @gray-20;
+      line-height: 35px;
+    }
+    .stages-arrow-prev {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .rotateY(180deg);
+    }
+  }
+  .stage-box-white {
+    position: relative;
+    background-color: @white;
+    .box {
+      width: 618px;
+      margin: 0 auto;
+      padding: 55px 45px 55px 45px;
+      .stage-box-white-title {
+        padding: 0 0 35px 0;
+        font-family: @font-dosis;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: left;
+        line-height: 32px;
+        color: @green;
+        text-transform: uppercase;
+      }
+      .stage-box-white-description {
+        font-family: @font-dosis;
+        font-size: 22px;
+        font-weight: 500;
+        text-align: left;
+        line-height: 32px;
+        color: @gray-20;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+.contact-carrosel {
+  background-color: @white;
+  padding: 45px 0 45px 0;
+  .box {
+    width: 300px;
+    margin: 0 auto;
+    .contact-carrosel-single {
+      padding: 35px;
+      p {
+        text-align: left;
+        color: @black;
+        font-size: 18px;
+        font-family: @font-dosis
+      }
+      .slick-dots {
+        display: none !important;
+      }
+      .slick-prev {
+        width: 50px;
+        height: auto;
+        overflow: hidden;
+        &::before {
+          content: "<";
+          font-family: @font-dosis;
+          font-size: 30px;
+          color: @gray-30;
+        }
+      }
+      .slick-next {
+        width: 50px;
+        height: auto;
+        overflow: hidden;
+        &::before {
+          content: ">";
+          font-family: @font-dosis;
+          font-size: 30px;
+          color: @gray-30;
+        }
+      }
+    }
+    .btn-dnx-secondary {
+      padding: 20px 0 20px 0;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

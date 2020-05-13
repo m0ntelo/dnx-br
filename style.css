@@ -21,6 +21,8 @@ Version: 1.0
 
 @import url("css/lib/bootstrap.min.css");
 @import url("css/lib/unslider.css");
+@import url("css/lib/slick.css");
+@import url("css/lib/slick-theme.css");
 @import url("css/lib/normalize.min.css");
 @import url("css/lib/fontawesome.all.min.css");
 @import url("css/lib/fontawesome.solid.min.css");

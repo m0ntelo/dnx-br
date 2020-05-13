@@ -162,3 +162,116 @@
     }
   }
 }
+
+//
+// Clients
+//
+
+.clients {
+  padding: 55px 0 55px 0;
+  background-color: @gray-10;
+  .clients-title {
+    padding: 15px 0 65px 0;
+    font-family: @font-dosis;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+    line-height: 50px;
+  }
+  .clients-avatar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+      margin: 15px 0 15px 0;
+    }
+  }
+  .clients-stars {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    img {
+      margin: 0 0 15px 0;
+    }
+  }
+  .clients-description {
+    font-family: @font-dosis;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    min-height: 168px;
+  }
+  .clients-name {
+    margin: 15px 0 0 0;
+    font-family: @font-dosis;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .line {
+    display: inline-block;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+//
+// Partners
+//
+
+.partners {
+  position: relative;
+  padding: 35px 0 55px 0;
+  .partners-title {
+    padding: 15px 0 35px 0;
+    font-family: @font-dosis;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    line-height: 50px;
+  }
+  .partners-img {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .slick-dotted.slick-slider {
+    padding: 40px;
+  }
+  .partners-list {
+    border-top: 1px solid rgba(237, 237, 237, 1);
+    border-bottom: 1px solid rgba(237, 237, 237, 1);
+    img {
+      padding: 0 15px 0 15px;
+    }
+    .slick-dots {
+      display: none!important;
+    }
+    .slick-prev {
+      width: 50px;
+      height: auto;
+      overflow: hidden;
+      &::before{
+        content: url(../../img/arrows-prev.png);
+      }
+    }
+    .slick-next {
+      width: 50px;
+      height: auto;
+      overflow: hidden;
+      &::before{
+        content: url(../../img/arrows-next.png);
+      }
+    }
+  }
+  .line {
+    display: inline-block;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+  }
+}

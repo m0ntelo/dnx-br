@@ -24,11 +24,13 @@
           line-height: 50px;
           padding-left: 30px;
           padding-right: 30px;
+          .transition();
           &:hover,
           &:focus,
           &:active {
             background-color: @black;
-            color: @white;
+            color: @green;
+            .transition();
           }
         }
       }
@@ -40,9 +42,20 @@
         }
       }
     }
-    .dropdown-menu {
-      li {
-        a {
+    .dropdown {
+      &:hover {
+        .dropdown-menu {
+          display: block;
+        }
+      }
+      .dropdown-menu {
+        background-color: @black;
+        li {
+          a {
+            text-align: center;
+            padding: 5px 15px;
+            line-height: 30px;
+          }
         }
       }
     }
