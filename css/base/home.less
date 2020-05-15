@@ -8,7 +8,7 @@
 //
 
 .banner {
-  background-image: url(../../img/banner.jpg);
+  background-image: url(../../img/background-banner.webp);
   background-size: cover;
   padding: 65px 0 65px 0;
   .banner-title {
@@ -23,10 +23,6 @@
     margin-top: 45px;
   }
 }
-
-// 
-// About
-//
 
 .about {
   background-color: @gray-10;
@@ -47,10 +43,6 @@
     color: black;
   }
 }
-
-//
-// Services
-//
 
 .gray {
   background-color: @gray-10;
@@ -163,10 +155,6 @@
   }
 }
 
-//
-// Clients
-//
-
 .clients {
   padding: 55px 0 55px 0;
   background-color: @gray-10;
@@ -218,10 +206,6 @@
   }
 }
 
-//
-// Partners
-//
-
 .partners {
   position: relative;
   padding: 35px 0 55px 0;
@@ -247,6 +231,11 @@
     border-bottom: 1px solid rgba(237, 237, 237, 1);
     img {
       padding: 0 15px 0 15px;
+      .transition();
+      &:hover {
+        .transition();
+        .transparencia(0.5);
+      }
     }
     .slick-dots {
       display: none!important;

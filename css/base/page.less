@@ -277,9 +277,9 @@
 }
 
 .data-analytics-banner {
-  background-image: url(../../img/banner.jpg);
+  background-image: url(../../img/background-data-analytics.webp);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   padding: 115px 0 115px 0;
   img {
     display: flex;
@@ -805,6 +805,7 @@
 
 .devops-contact {
   background-image: url(../../img/background-devops-contact.webp);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   padding: 65px 0 65px 0;
@@ -823,5 +824,135 @@
     margin: 45px 0 0 0;
     padding: 15px 90px 15px 90px;
     font-size: 22px;
+  }
+}
+
+.devops-about {
+  padding: 75px 0 75px 0;
+  .devops-about-title {
+    padding: 30px 0px 30px 0px;
+    font-family: @font-dosis;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    color: @black;
+    line-height: 50px;
+  }
+  .devops-about-description {
+    margin: 15px 0 15px 0;
+    font-family: @font-dosis;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 32px;
+    color: @black;
+  }
+  .devops-about-box {
+    position: relative;
+    background-color: @white;
+    min-height: 410px;
+    margin: 0 0 55px 0;
+    padding: 35px 35px 35px 35px;
+    border: 1.2px solid @gray-30;
+    border-radius: 5px;
+    border-bottom: 7px solid @black;
+    z-index: @z-index-1;
+    .devops-about-icons {
+      img {
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+    .devops-about-sub-title {
+      margin: 25px 0 15px 0;
+      font-family: @font-dosis;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 32px;
+      color: @black;
+    }
+    .devops-about-message {
+      margin: 15px 0 25px 0;
+      font-family: @font-dosis;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 22px;
+      color: @black;
+    }
+    .devops-about-avatar {
+      img {
+        display: flex;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+    }
+  }
+  .logo-aws {
+    margin-top: 120px;
+    float: right;
+  }
+  .line {
+    display: inline-block;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.devops-cases {
+  background-image: url(../../img/background-devops-about.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 65px 0 65px 0;
+  .devops-cases-title {
+    margin: 15px 0 35px 0;
+    font-family: @font-dosis;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 32px;
+    color: @white;
+  }
+  .devops-cases-description {
+    margin: 15px 0 15px 0;
+    font-family: @font-dosis;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    color: @white;
+  }
+  .btn-dnx-secondary {
+    width: 315px;
+    margin: 55px auto 0 auto;
+    display: block;
+    background-color: @black;
+    padding: 15px 90px 15px 90px;
+    font-size: 22px;
+  }
+  .line {
+    background-color: @white;
+    display: inline-block;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.devops-post {
+  background-color: @white;
+  padding: 65px 0 65px 0;
+  .devops-post-description {
+    padding: 15px 10px 15px 10px;
+    border: 1px solid @gray-30;
+    font-family: @font-dosis;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 32px;
+    color: @black;
   }
 }
