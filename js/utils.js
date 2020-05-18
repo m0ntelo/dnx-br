@@ -7,11 +7,13 @@ $(document).ready(function () {
     infinite: true,
     centerMode: true,
     slidesToShow: 5,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 1500 
   });
 
   $(".contact-carrosel-single").slick();
-
+  
   $("#cnpj").mask("99.999.999/9999-99");
   $("#telefone").mask("(99) 999999999");
   $("#telefone_op").mask("(99) 999999999");
