@@ -12,28 +12,31 @@
 <div ng-app="myApp" ng-controller="myCtrl">
   <div ng-include="'header.html'"></div>
   <section class="contact">
-    <div class="wrapper">
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Telefone">
-            <textarea placeholder="Digite sua mensagem aqui..."></textarea>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="contact-title">Entrar em contato</div>
-          <div class="line"></div>
-          <div class="contact-description">
-            Estamos aqui para ajudar sua empresa a prosperar. Entre em contato<br>
-            conosco para uma avaliação gratuita para conhecer o poder dos<br>
-            recursos oferecidos pela nuvem AWS.
+    <form name="Contato">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" ng-model="nome" name="nome" placeholder="Nome" required>
+            <input type="email" ng-model="email" name="email" placeholder="Email" ng-pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" required>
+            <div ng-if="Contato.email.$error.pattern" class="invalid-feedback">Insira um email válido.</div>
+            <input type="text" id="telefone" ng-model="telefone" name="telefone" placeholder="Telefone" required>
+            <textarea ng-model="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
           </div>
-          <a class="btn-dnx-secondary" href="#">Enviar</a>
+          <div class="col-md-6">
+            <div class="contact-title">Entrar em contato</div>
+            <div class="line"></div>
+            <div class="contact-description">
+              Estamos aqui para ajudar sua empresa a prosperar. Entre em contato<br>
+              conosco para uma avaliação gratuita para conhecer o poder dos<br>
+              recursos oferecidos pela nuvem AWS.
+            </div>
+            <button ng-disabled="!Contato.$valid" ng-click="submit()" class="btn-dnx-secondary" href="#">Enviar</button>
+            <div ng-if="formulario" class="msg-sucesso">Enviado com sucesso!</div>
+            <div ng-if="formulario" class="msg-erro">Erro ao processar! Tente novamente.</div>
+          </div>
         </div>
       </div>
-    </div>
+    </form>
   </section>
   <div ng-include="'footer.html'"></div>
 </div>

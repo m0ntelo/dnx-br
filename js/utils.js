@@ -13,9 +13,6 @@ $(document).ready(function () {
   });
 
   $(".contact-carrosel-single").slick();
-  
-  $("#cnpj").mask("99.999.999/9999-99");
   $("#telefone").mask("(99) 999999999");
-  $("#telefone_op").mask("(99) 999999999");
 
 });
