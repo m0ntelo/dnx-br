@@ -1,46 +1,30 @@
-var url = "aquiaurl";
+var url = "https://fv2gys3qkl.execute-api.us-east-2.amazonaws.com/submit/contact-us";
 var app = angular.module('myApp', []);
 
-app.controller('myCtrl', function ($scope) {
-
-  $scope.formulario = false;
+app.controller('myCtrl', function ($scope, $http) {
 
   $scope.submit = function () {
 
     var objEmail = {
-      "nome": $scope.nome,
+      "name": $scope.nome,
+      "phone": $scope.telefone,
       "email": $scope.email,
-      "telefone": $scope.telefone,
-      "mensagem": $scope.mensagem
+      "desc": $scope.mensagem
     }
-
-    console.log("Dados email", objEmail);
 
     $http({
       url: url,
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      params: {
-        action: "mail",
-        email: objEmail,
-      }
+      data: objEmail
     })
     .then(function (response) {
-
-      console.log("sucesso", response);
-
-      // var data = JSON.parse(response.data);
-
-      // if (data) {
-      //   $rootScope.$broadcast("msg_sucesso_show");
-      // } else {
-      //   $rootScope.$broadcast("msg_erro_show");
-      // }
-
+      $scope.notificationSucesso = true;
+      setTimeout(function () { $('.msg-sucesso').hide() }, 5000);
     })
     .catch(function (response) {
-      // $rootScope.$broadcast("msg_erro_show");
-      console.log("erro", response);
+      $scope.notificationErro = true;
+      setTimeout(function () { $('.msg-erro').hide() }, 5000);
     });
   }
 

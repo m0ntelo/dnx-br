@@ -31,8 +31,8 @@
               recursos oferecidos pela nuvem AWS.
             </div>
             <button ng-disabled="!Contato.$valid" ng-click="submit()" class="btn-dnx-secondary" href="#">Enviar</button>
-            <div ng-if="formulario" class="msg-sucesso">Enviado com sucesso!</div>
-            <div ng-if="formulario" class="msg-erro">Erro ao processar! Tente novamente.</div>
+            <div ng-if="notificationSucesso" class="msg-sucesso">Enviado com sucesso!</div>
+            <div ng-if="notificationErro" class="msg-erro">Erro ao processar! Tente novamente.</div>
           </div>
         </div>
       </div>
