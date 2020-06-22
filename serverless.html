@@ -6,10 +6,12 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <div ng-app="myApp" ng-controller="myCtrl">
+
+  <link rel="stylesheet" href="style.css?{{random}}">
+
   <div ng-include="'header.html'"></div>
   <section class="serverless-banner">
     <div class="wrapper">
@@ -29,9 +31,9 @@
             <div class="serverless-about-p">
               Criar aplicações sem provisionar e gerenciar servidores pode ser
               desafiador - Esta abordagem é uma maneira diferente de desenvolver,
-              pois os recursos estão na nuvem. Requer desenvolvedores que
-              entendam a nuvem e tenham para que possam definir corretamente
-              as soluções.
+              pois os recursos estão na nuvem. Requer desenvolvedores que entendam a
+              computação na nuvem, para que possam definir corretamente as
+              soluções.
             </div>
             <div class="serverless-about-p">
               Os benefícios do uso dessa arquitetura são muitos, a manutenção a

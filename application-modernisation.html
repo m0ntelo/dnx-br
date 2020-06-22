@@ -6,15 +6,17 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <div ng-app="myApp" ng-controller="myCtrl">
+
+  <link rel="stylesheet" href="style.css?{{random}}">
+
   <div ng-include="'header.html'"></div>
   <section class="post-banner">
     <div class="wrapper">
       <div class="row">
-        <div class="post-banner-title"> Transformação de Aplicação</div>
+        <div class="post-banner-title">Transformação de Aplicações</div>
         <div class="post-banner-description">
           Deseja desenvolver um novo aplicativo ou otimizar um
           existente para funcionar melhor na nuvem? Nossos
@@ -33,19 +35,19 @@
         <div class="post-content-title">Nossa Diferença</div>
         <div class="post-content-description">
           Nossa equipe combina conhecimento de engenharia de software e nuvem,
-          permitindo fornecer serviços<br> que cobrem toda a pilha - do servidor 
-          em nuvem ao código em execução nas máquinas devs.
+          permitindo que a DNX forneça serviços abrangentes e completos - do servidor em nuvem
+          ao código em execução nas máquinas dos desenvolvedores.
         </div>
         <div class="post-content-description">
           Nenhuma tecnologia proprietária - fazemos <b>infraestrutura como código</b> 
           com o Terraform (uma ferramenta de código aberto)<br> para criar e manter 
           sua nuvem. Nossa plataforma é publicamente documentada e mantida por 
-          nós, para que você não precise se preocupar com bloqueios.
+          nós, para que você não precise se preocupar com dependências indesejadas.
         </div>
         <div class="post-content-description">
-          E para manter sua equipe capaz de gerenciar sua nova plataforma 
-          e continuar agregando valor, ajudamos a promovê-la com workshops,
-          orientação e suporte na nuvem.
+          E para manter sua equipe capaz de gerenciar sua nova plataforma e
+          continuar agregando valor, ajudamos com a promoção de workshops, consultorias e
+          suporte na nuvem.
         </div>
         <div class="post-content-card">
           <div class="post-content-card-title">Agilidade</div>
@@ -64,23 +66,24 @@
     <div class="wrapper">
       <div class="row">
         <div class="col-md-12">
-          <div class="stages-title">Etapas da Modernização de Aplicativos</div>
+          <div class="stages-title">Etapas da Modenização de Aplicações</div>
           <div class="stages-box">
             <div class="stage-description">
-              Você tem aplicativos em execução em uma plataforma comprovada que 
-              pode atender aos requisitos de seus usuários, mas custa muito para 
-              manter e atrasar a entrega de novos recursos.
+              Você tem aplicações em execução em uma plataforma que
+              comprovadamente atende aos requisitos de seus usuários, mas o custo mantê-la é muito
+              caro. Além disso, disponibilização de novos recursos e funcionalidades para seus clientes
+              normalmente atrasa.
             </div>
             <img class="stages-arrow-prev" width="56" height="auto" src="img/arrow_next_blue.webp">
           </div>
           <!-- end stage box -->
           <div class="stage-box-white">
             <div class="box">
-              <div class="stage-box-white-title">REPLATFORMING</div>
+              <div class="stage-box-white-title">Reconstrução da Plataforma</div>
               <div class="stage-box-white-description">
                 Começamos implantando nossa plataforma, gostamos de chamá-la de DNX.one, 
-                pois é a primeira camada de uma modernização, o terreno em que seu aplicativo 
-                florescerá.
+                pois é a primeira camada de uma modernização, sendo a base para que
+                sua aplicação funcione corretamente
                 <br><br>
                 O DNX.one é uma plataforma de contêiner segura, de alta disponibilidade, 
                 baixo custo e escalabilidade. Ele combina anos de experiência em nuvem em uma 
@@ -96,8 +99,8 @@
         <div class="col-md-12">
           <div class="stages-box">
             <div class="stage-description">
-              Uma vez que a plataforma esteja instalada, o trabalho 
-              para transformar seus aplicativos pode começar.
+              Uma vez que a plataforma esteja instalada, o trabalho para transformar
+              suas aplicações pode começar.
             </div>
             <img class="stages-arrow-prev" width="56" height="auto" src="img/arrow_next_blue.webp">
           </div>
@@ -106,19 +109,19 @@
             <div class="box">
               <div class="stage-box-white-title">MODERNIZAÇÃO</div>
               <div class="stage-box-white-description">
-                Trabalhamos com seus desenvolvedores para aplicar princípios 
-                de 12 fatores, contêiner e implantar em sua nova plataforma 
-                na nuvem.
+                Trabalhamos em conjunto com seus desenvolvedores para aplicar
+                princípios de 12 fatores, estratégias de conteinerização e implantação em sua nova
+                plataforma na nuvem.
               </div>
               <div class="stage-box-white-description">
-                Todos os serviços usados ​​por seus aplicativos são migrados para a 
-                alternativa mais econômica na AWS, com um plano de migração para 
-                minimizar o tempo de inatividade durante a transição.
+                Todos os serviços usados por suas aplicações são migrados para a alternativa mais
+                econômica na AWS, com um plano de migração para minimizar o tempo de inatividade
+                durante a transição.
               </div>
               <div class="stage-box-white-description">
-                A implantação é atualizada para um pipeline de implantação contínua, 
-                criado em torno de cada aplicativo, usando sua ferramenta preferida 
-                de repositório de código.
+                A implantação é atualizada para uma esteira de integração de implantação contínua (CI e
+                CD), criada em torno de cada aplicação, usando sua ferramenta preferida de repositório
+                de código.
               </div>
             </div>
           </div>
@@ -135,16 +138,16 @@
             <a class="btn-dnx-secondary" href="contato.html">Contato</a>
             <div class="contact-carrosel-single">
               <div>
-                <p>before you need that test environment to validate a new feature with the business.</p>
+                <p>Antes de você precisar validar uma nova funcionalidade com a área de negócio em um ambiente de testes.</p>
               </div>
               <div>
-                <p>before you need that test environment to validate a new feature with the business.</p>
+                <p>Antes de você precisar novamente dimensionar manualmente seus servidores para atender a novas demandas.”</p>
               </div>
               <div>
-                <p>before you need that test environment to validate a new feature with the business.</p>
+                <p>Antes que a sua fatura de custos de computação em nuvem chegue.</p>
               </div>
               <div>
-                <p>before you need that test environment to validate a new feature with the business.</p>
+                <p>Antes de precisar fazer a próxima implantação à noite, para evitar o impacto ao cliente durante o dia.</p>
               </div>
             </div>
           </div>

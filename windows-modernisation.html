@@ -6,16 +6,18 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <div ng-app="myApp" ng-controller="myCtrl">
+
+  <link rel="stylesheet" href="style.css?{{random}}">
+
   <div ng-include="'header.html'"></div>
   <section class="serverless-banner">
     <div class="wrapper">
       <div class="row">
         <div class="col-md-12">
-          <div class="serverless-banner-title">Modernização do Windows</div>
+          <div class="serverless-banner-title">Modernização de aplicações Windows</div>
         </div>
       </div>
     </div>

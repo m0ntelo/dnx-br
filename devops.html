@@ -6,10 +6,12 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <div ng-app="myApp" ng-controller="myCtrl">
+
+  <link rel="stylesheet" href="style.css?{{random}}">
+
   <div ng-include="'header.html'"></div>
   <section class="devops-banner">
     <div class="wrapper">
@@ -17,9 +19,9 @@
         <div class="col-md-12">
           <div class="devops-banner-title">DevOps <div class="line"></div></div>
           <div class="devops-banner-description">
-            Deliver what matters and compete<br> 
-            more effectively in the market.</div>
-            <a class="btn-dnx-secondary" href="contato.html">Contact Us</a>
+            Entregue o que importa e concorra<br> 
+            mais efetivamente no mercado.</div>
+            <a class="btn-dnx-secondary" href="contato.html">Fale conosco</a>
         </div>
       </div>
     </div>
@@ -29,11 +31,11 @@
     <div class="wrapper">
       <div class="row">
         <div class="col-md-12">
-          <div class="devops-benefits-title">What are the benefits <div class="line"></div></div>
+          <div class="devops-benefits-title">Benefícios da abordagem DevOps <div class="line"></div></div>
           <div class="devops-benefits-description">
-            Build up strong culture philosophies, automate<br class="hidden-xs"> 
-            the process, and use the technologies to deliver<br class="hidden-xs">
-            applications quickly and reliably.
+            Criação filosofias culturais fortes, automatização<br class="hidden-xs">  
+            de processos e uso de tecnologias para fornecer<br class="hidden-xs">  
+            aplicações de forma rápida e confiável.
           </div>
         </div>
         <div class="col-md-4">
@@ -42,14 +44,15 @@
               <img width="57" height="auto" src="img/icon-speed.webp">
             </div>
             <div class="devops-benefits-sub-title">
-              Speed and increased<br> 
-              Quality & Innovation
+              Velocidade e aumento<br> 
+              da qualidade e Inovação
             </div>
             <div class="devops-benefits-message">
-              Increase a team's speed while <b>focusing on production and 
-              customer experience</b> through prioritised quality and system 
-              robustness. It enables your company to deliver <b>innovation</b> 
-              and respond to market changes sooner and more frequently. 
+              Aumente a velocidade da sua equipe, permitindo que ela se <b>concentre 
+              na produção e na experiência do cliente por meio de qualidade 
+              priorizada e robustez do sistema. DevOps permite que sua empresa 
+              ofereça inovação e responsa às mudanças do mercado mais cedo 
+              e com mais frequência.
             </div>
           </div>
         </div>
@@ -59,14 +62,16 @@
               <img width="57" height="auto" src="img/icon-market.webp">
             </div>
             <div class="devops-benefits-sub-title">
-              Market Success<br>
-              through CICD
+              CI / CD: Sucesso ao lançar novidades
+              do seu negócio para o mercado
             </div>
             <div class="devops-benefits-message">
-              Increase a team's speed while <b>focusing on production and 
-              customer experience</b> through prioritised quality and system 
-              robustness. It enables your company to deliver <b>innovation</b> 
-              and respond to market changes sooner and more frequently. 
+              Entregue valor aos seus usuários muito antes e deixe seus 
+              concorrentes para trás. Libere inovação e melhorias em suas 
+              aplicações, criando novos recursos e corrigindo bugs através 
+              das práticas de Integração Contínua e Entrega Contínua, o que 
+              significa entregar com mais frequência, reduzir riscos e aumentar 
+              a estabilidade de sistemas / aplicações.
             </div>
           </div>
         </div>
@@ -76,13 +81,14 @@
               <img width="57" height="auto" src="img/icon-scale.webp">
             </div>
             <div class="devops-benefits-sub-title">
-              Scale
+              Escalabilidade / Crescimento
             </div>
             <div class="devops-benefits-message">
-              Increase a team's speed while <b>focusing on production and 
-              customer experience</b> through prioritised quality and system 
-              robustness. It enables your company to deliver <b>innovation</b> 
-              and respond to market changes sooner and more frequently. 
+              Trabalhe em escala e tenha grandes retornos operacionais e técnicos 
+              com automação,controle de custos, redução de riscos e reformulação 
+              das práticas de segurança, independentemente de mudanças ou complexidade 
+              de sistemas. Use ferramentas baseadas em código e trate a infraestrutura 
+              e o código das aplicações da mesma maneira.
             </div>
           </div>
         </div>
@@ -92,13 +98,15 @@
               <img width="57" height="auto" src="img/icon-reliability.webp">
             </div>
             <div class="devops-benefits-sub-title">
-              Reliability
+              Confiabilidade
             </div>
             <div class="devops-benefits-message">
-              Increase a team's speed while <b>focusing on production and 
-              customer experience</b> through prioritised quality and system 
-              robustness. It enables your company to deliver <b>innovation</b> 
-              and respond to market changes sooner and more frequently. 
+              Aproveite os benefícios de aprimoramento da comunicação, estabelecendo uma base
+              para o aprendizado contínuo e criação de um trabalho significativo, através da
+              colaboratividade estreita desenvolvedores e as equipes de operações, que compartilham
+              muitas responsabilidades e combinam seus fluxos de trabalho. Além disso, permita que
+              seus desenvolvedores agreguem valor continuamente com sistemas/aplicativos estáveis
+              e disponíveis.
             </div>
           </div>
         </div>
@@ -108,14 +116,15 @@
               <img width="auto" height="62" src="img/icon-collaboration.webp">
             </div>
             <div class="devops-benefits-sub-title">
-              Improved<br>
-              Collaboration
+              “Colaboração<br> aprimorada
             </div>
             <div class="devops-benefits-message">
-              Increase a team's speed while <b>focusing on production and 
-              customer experience</b> through prioritised quality and system 
-              robustness. It enables your company to deliver <b>innovation</b> 
-              and respond to market changes sooner and more frequently. 
+              Aproveite os benefícios de aprimoramento da comunicação, estabelecendo uma base
+              para o aprendizado contínuo e criação de um trabalho significativo, através da
+              colaboratividade estreita desenvolvedores e as equipes de operações, que compartilham
+              muitas responsabilidades e combinam seus fluxos de trabalho. Além disso, permita que
+              seus desenvolvedores agreguem valor continuamente com sistemas/aplicativos estáveis
+              e disponíveis.
             </div>
           </div>
         </div>
@@ -125,14 +134,14 @@
               <img width="57" height="auto" src="img/icon-security.webp">
             </div>
             <div class="devops-benefits-sub-title">
-              Security and<br>
-              Governance
+              Segurança e Governança
             </div>
             <div class="devops-benefits-message">
-              Increase a team's speed while <b>focusing on production and 
-              customer experience</b> through prioritised quality and system 
-              robustness. It enables your company to deliver <b>innovation</b> 
-              and respond to market changes sooner and more frequently. 
+              Adote um modelo de DevOps sem sacrificar a segurança. Use políticas de
+              conformidade automatizadas, controles refinados e técnicas de gerenciamento de
+              configuração que permitam que sua equipe torne-se mais produtiva. Capture 
+              informações de auditoria necessárias e coloque a segurança e o controle certos em torno
+              dos pontos necessários.
             </div>
           </div>
         </div>
@@ -145,13 +154,13 @@
       <div class="row">
         <div class="col-md-8">
           <div class="devops-contact-description">
-            <b>Leave manual processes behind and embrace an<br> 
-            automated, cloud-native way of working.</b>
+            <b>Deixe para trás os processos manuais e adote uma<br>
+            forma de trabalho automatizada e nativa na nuvem.</b>
           </div>
-          <div class="devops-contact-description">We are native. We are DNX.</div>
+          <div class="devops-contact-description">Nós nascemos na Nuvem. Somos a DNX.</div>
         </div>
         <div class="col-md-4">
-          <a class="btn-dnx-secondary" href="contato.html">Contact Us</a>
+          <a class="btn-dnx-secondary" href="contato.html">Entre em contato</a>
         </div>
       </div>
     </div>

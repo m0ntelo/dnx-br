@@ -3,6 +3,8 @@ var app = angular.module('myApp', []);
 
 app.controller('myCtrl', function ($scope, $http) {
 
+  $scope.random = Math.round(Math.random() * 550 / 5) * 5 + 5;
+
   $scope.submit = function () {
 
     var objEmail = {

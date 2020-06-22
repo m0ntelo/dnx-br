@@ -6,10 +6,12 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <div ng-app="myApp" ng-controller="myCtrl">
+
+  <link rel="stylesheet" href="style.css?{{random}}">
+  
   <div ng-include="'header.html'"></div>
   <section class="data-analytics-banner">
     <div class="wrapper">
@@ -29,7 +31,7 @@
             <div class="data-analytics-title">Nossa Proposta de solução <div class="line"></div></div>
             <div class="data-analytics-description">
               Ajudamos as empresas a <b>impactar de forma evolutiva os negócios,
-              transformando seus dados em insights significativos</b>.
+              transformando seus dados em visões significativas</b>.
               Recupere os dados onde quer que esteja, mova, transforme,
               armazene da melhor maneira, consulte facilmente e faça algumas 
               análises impressionantes. Transforme dados em ideias que vão impactar seu negócio.
@@ -49,8 +51,8 @@
         </div>
         <div class="col-md-6">
           <div class="data-analytics-message">
-            Transforme dados em insights que<br class="hidden-xs">
-            terá impacto nos seus negócios.
+            Transforme seus dados em visões<br class="hidden-xs">
+            que terão impacto nos seus negócios
           </div>
         </div>
         <div class="col-md-3">
@@ -130,8 +132,8 @@
                 <img class="float-background" width="170" height="auto" src="img/bg-transformation.webp">
               </div>
               <div class="more-services-description">
-                Transformação<br>
-                de Aplicação
+                Transformação<br> 
+                de Aplicações
               </div>
             </div>
           </div>

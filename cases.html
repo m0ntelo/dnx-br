@@ -6,16 +6,48 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <div ng-app="myApp" ng-controller="myCtrl">
+
+  <link rel="stylesheet" href="style.css?{{random}}">
+
   <div ng-include="'header.html'"></div>
   <section class="cases">
     <div class="wrapper">
       <div class="row">
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/what-devops-is-and-how-it-contributes-to-the-digital-transformation">
+            <div class="cases-screenshot" style="background-image: url(img/cases/devops-digital.webp);"></div>
+          </a>
+          <div class="cases-box">
+            <div class="cases-logo">
+              <img width="32" height="32" src="img/cases-logo-dnx.png">
+              DNX Solutions
+            </div>
+            <div class="cases-share">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
+            </div>
+            <a target="_blank" href="https://www.dnx.solutions/post/what-devops-is-and-how-it-contributes-to-the-digital-transformation"><div class="cases-title">What DevOps is and how it contributes to the Digital Transformation</div></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a target="_blank" href="https://www.dnx.solutions/post/study-case-moving-from-heroku-to-aws-without-adding-infrastructure-operations">
+            <div class="cases-screenshot" style="background-image: url(img/cases/study-waterco.webp);"></div>
+          </a>
+          <div class="cases-box">
+            <div class="cases-logo">
+              <img width="32" height="32" src="img/cases-logo-dnx.png">
+              DNX Solutions
+            </div>
+            <div class="cases-share">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
+            </div>
+            <a target="_blank" href="https://www.dnx.solutions/post/study-case-moving-from-heroku-to-aws-without-adding-infrastructure-operations"><div class="cases-title">Case Study Waterco: Moving from Heroku to AWS without adding infrastructure operations</div></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-applying-modern-devops-concepts-in-aws">
             <div class="cases-screenshot" style="background-image: url(img/cases/conceitos-aws.webp);"></div>
           </a>
           <div class="cases-box">
@@ -26,11 +58,11 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudo de caso: aplicando conceitos modernos de DevOps na AWS</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-applying-modern-devops-concepts-in-aws"><div class="cases-title">Estudo de caso: aplicando conceitos modernos de DevOps na AWS</div></a>
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-how-tech2-implemented-continuous-delivery-running-net-core-workloads-in-aws">
             <div class="cases-screenshot" style="background-image: url(img/cases/entraga-continua.webp);"></div>
           </a>
           <div class="cases-box">
@@ -41,11 +73,11 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudos de caso: como a Tech2 implementou a entrega contínua executando cargas...</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-how-tech2-implemented-continuous-delivery-running-net-core-workloads-in-aws"><div class="cases-title">Estudos de caso: como a Tech2 implementou a entrega contínua executando cargas...</div></a>
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-how-krost-using-infrastructure-as-code-simplified-scalability-in-aws-1">
             <div class="cases-screenshot" style="background-image: url(img/cases/how-krost.webp);"></div>
           </a>
           <div class="cases-box">
@@ -56,11 +88,11 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudo de caso: como o Krost, usando a infraestrutura como código, simplificou a escalabilidade na AWS</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-how-krost-using-infrastructure-as-code-simplified-scalability-in-aws-1"><div class="cases-title">Estudo de caso: como o Krost, usando a infraestrutura como código, simplificou a escalabilidade na AWS</div></a>
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-byteiq-building-an-aws-platform-for-digital-health-companies">
             <div class="cases-screenshot" style="background-image: url(img/cases/building-aws.webp);"></div>
           </a>
           <div class="cases-box">
@@ -71,11 +103,11 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudo de caso ByteIQ: construindo uma plataforma da AWS para empresas de saúde digital</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-byteiq-building-an-aws-platform-for-digital-health-companies"><div class="cases-title">Estudo de caso ByteIQ: construindo uma plataforma da AWS para empresas de saúde digital</div></a>
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-how-krost-using-infrastructure-as-code-simplified-scalability-in-aws">
             <div class="cases-screenshot" style="background-image: url(img/cases/how-rescon.webp);"></div>
           </a>
           <div class="cases-box">
@@ -86,11 +118,11 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudo de caso: como o Rescon Builders reduziu o billing da cloud migrando do Azure para a AWS</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-how-krost-using-infrastructure-as-code-simplified-scalability-in-aws"><div class="cases-title">Estudo de caso: como o Rescon Builders reduziu o billing da cloud migrando do Azure para a AWS</div></a>
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-cribz-aws-well-architected-platform">
             <div class="cases-screenshot" style="background-image: url(img/cases/cribz-aws.webp);"></div>
           </a>
           <div class="cases-box">
@@ -101,11 +133,11 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudo de caso: Cribz AWS Well-Architected Platform</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-cribz-aws-well-architected-platform"><div class="cases-title">Estudo de caso: Cribz AWS Well-Architected Platform</div></a>
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-hampr-aws-platform-ci-cd-and-application-migration">
             <div class="cases-screenshot" style="background-image: url(img/cases/hampr-aws.webp);"></div>
           </a>
           <div class="cases-box">
@@ -116,11 +148,11 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudo de caso: Plataforma HAMPR AWS, CI / CD e migração de aplicativos</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-hampr-aws-platform-ci-cd-and-application-migration"><div class="cases-title">Estudo de caso: Plataforma HAMPR AWS, CI / CD e migração de aplicativos</div></a>
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#">
+          <a target="_blank" href="https://www.dnx.solutions/post/case-study-uorderit-aws-platform-cicd-and-application-migration">
             <div class="cases-screenshot" style="background-image: url(img/cases/uorderit-aws.webp);"></div>
           </a>
           <div class="cases-box">
@@ -131,7 +163,7 @@
             <div class="cases-share">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img" class="blog-post-homepage-description-fill blog-hover-container-element-fill"><path d="M2.44398805,5.99973295 C1.62345525,5.9690612 0.980075653,5.28418875 1.00047182,4.46312144 C1.02086799,3.64205413 1.69745853,2.98998831 2.51850166,3.0001164 C3.33954478,3.01024449 3.99985313,3.67880182 4,4.50012255 C3.98424812,5.34399206 3.28763905,6.0153508 2.44398805,5.99973295 L2.44398805,5.99973295 Z M2.44398805,10.9997329 C1.62345525,10.9690612 0.980075653,10.2841888 1.00047182,9.46312144 C1.02086799,8.64205413 1.69745853,7.98998831 2.51850166,8.0001164 C3.33954478,8.01024449 3.99985313,8.67880182 4,9.50012255 C3.98424812,10.3439921 3.28763905,11.0153508 2.44398805,10.9997329 L2.44398805,10.9997329 Z M2.44398805,15.9997329 C1.62345525,15.9690612 0.980075653,15.2841888 1.00047182,14.4631214 C1.02086799,13.6420541 1.69745853,12.9899883 2.51850166,13.0001164 C3.33954478,13.0102445 3.99985313,13.6788018 4,14.5001225 C3.98424812,15.3439921 3.28763905,16.0153508 2.44398805,15.9997329 L2.44398805,15.9997329 Z"></path></svg>
             </div>
-            <a href="#"><div class="cases-title">Estudo de caso: plataforma UORDERIT AWS, CICD e migração de aplicativos</div></a>
+            <a target="_blank" href="https://www.dnx.solutions/post/case-study-uorderit-aws-platform-cicd-and-application-migration"><div class="cases-title">Estudo de caso: plataforma UORDERIT AWS, CICD e migração de aplicativos</div></a>
           </div>
         </div>
       </div>
